@@ -19,7 +19,7 @@
     <string name="action_lock_freeze">Bloquear y Congelar</string>
     <string name="action_launch">Lanzar</string>
     <string name="action_freeze">Congelar</string>
-    <string name="action_unfreeze">Decongelar</string>
+    <string name="action_unfreeze">Descongelar</string>
     <string name="action_deferred_task">Aplazar</string>
     <string name="action_tag_add">Añadir etiqueta</string>
     <string name="action_tag_remove">Remover etiqueta</string>
@@ -50,8 +50,8 @@
     <string name="filter_by">Filtro</string>
     <string name="filter_user_apps">Usuario</string>
     <string name="filter_system_apps">Sistema</string>
-    <string name="filter_frozen_apps">Congelar</string>
-    <string name="filter_unfrozen_apps">Descongelar</string>
+    <string name="filter_frozen_apps">Congeladas</string>
+    <string name="filter_unfrozen_apps">Descongeladas</string>
     <string name="sort_by">Ordenar por</string>
     <string name="sort_name">Nombre</string>
     <string name="sort_install">Primera instalación</string>
@@ -123,7 +123,7 @@
     <string name="action_skip">Omitir</string>
     <string name="mode_island_hide">Isla/Insular - Ocultar</string>
     <string name="mode_island_suspend">Isla/Insular - Suspender</string>
-    <string name="shizuku_hide_adb">Shizuku se está ejecutando como adb. Para ocultar aplicaciones, reinicia Shizuku con root.</string>
+    <string name="shizuku_hide_adb">Shizuku se está ejecutando mediante ADB. Para ocultar aplicaciones, reinicia Shizuku con acceso root.</string>
     <string name="command">Dominio</string>
     <string name="tag">Etiqueta</string>
     <string name="freeze_system_app">Congelar o desinstalar aplicaciones del sistema puede hacer que el dispositivo arranque en bucle. Asegúrate de que sabes lo que haces y haz una copia de seguridad de tus datos con antelación o utiliza un recuperador compatible con la gestión de archivos.</string>
@@ -137,7 +137,7 @@
     <string name="action_reinstall">Reinstalar</string>
     <string name="fuzzy_search">Fuzzy Search (búsqueda difusa)</string>
     <string name="app_theme">Tema de la aplicación</string>
-    <string name="follow_system">Sistema</string>
+    <string name="follow_system">Seguir el sistema</string>
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Oscuro</string>
     <string name="xposed_description">Descongela automáticamente aplicaciones suspendidas para aplicaciones con ámbito restringido</string>
