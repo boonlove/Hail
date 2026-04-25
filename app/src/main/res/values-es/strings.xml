@@ -57,7 +57,7 @@
     <string name="filter_unfrozen_apps">Descongeladas</string>
     <string name="sort_by">Ordenar por</string>
     <string name="sort_name">Nombre</string>
-    <string name="sort_install">Fecha de instalación</string>
+    <string name="sort_install">Primera instalación</string>
     <string name="sort_update">Fecha de actualización</string>
     <string name="title_donate">¡Gracias!</string>
     <string name="donate_alipay">Alipay</string>
