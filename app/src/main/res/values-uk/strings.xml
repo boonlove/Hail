@@ -6,7 +6,6 @@
     <string name="action_deferred_task">Відкласти завдання</string>
     <string name="action_deselect">Зняти виділення</string>
     <string name="action_details">Про застосунок</string>
-    <string name="action_donate">Задонатити</string>
     <string name="action_export_all">Експорт всіх</string>
     <string name="action_export_clipboard">Експорт в буфер обміну</string>
     <string name="action_export_current">Експорт видимий</string>
@@ -25,15 +24,12 @@
     <string name="action_lock">Заблокувати</string>
     <string name="action_lock_freeze">Заблокувати та заморозити</string>
     <string name="action_pin">Закріпити</string>
-    <string name="action_qq">Група в QQ</string>
     <string name="action_remove_home">Видалити з головної сторінки</string>
     <string name="action_remove_whitelist">Видалити з білого списку</string>
     <string name="action_search">Пошук</string>
     <string name="action_tag_add">Додати тег</string>
     <string name="action_tag_remove">Видалити тег</string>
     <string name="action_tag_set">Встановити тег</string>
-    <string name="action_telegram">Група в Телеграм</string>
-    <string name="action_translate">Переклад</string>
     <string name="action_undo">Скасувати</string>
     <string name="action_unfreeze">Розморозити</string>
     <string name="action_unfreeze_all">Розморозити все</string>
@@ -51,15 +47,6 @@
     <string name="auto_freeze_delay">Затримка заморозки (хвилини)</string>
     <string name="auto_freeze_notification_title">Запущено службу автозаморожування</string>
     <string name="compact_icon">Компактні іконки</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_bilibili">Bilibili</string>
-    <string name="donate_bilibili_cancel">Скасувати</string>
-    <string name="donate_bilibili_msg">Підпишіться на мій Bilibili.</string>
-    <string name="donate_bilibili_space">Простір Bilibili</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_wechat_scan">Сканувати</string>
     <string name="filter_by">Фільтр</string>
     <string name="filter_frozen_apps">Заморожені</string>
     <string name="filter_system_apps">Системні</string>
@@ -107,7 +94,6 @@
     <string name="title_about">Про застосунок</string>
     <string name="title_apps">Застосунки</string>
     <string name="title_customize">Зовнішній вигляд</string>
-    <string name="title_donate">Дякуємо!</string>
     <string name="title_home">Головна</string>
     <string name="title_remove_owner">Видалити власника пристрою</string>
     <string name="title_set_owner">Встановити власника пристрою</string>
@@ -140,7 +126,6 @@
     <string name="mode_su_hide">Root - Прихововати</string>
     <string name="mode_island_hide">Island/Insular - Приховування</string>
     <string name="mode_island_suspend">Island/Insular - Вимкнення</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="shizuku_hide_adb">Shizuku працює по adb. Щоб приховати застосунки, перезапустіть Shizuku з рут правами.</string>
     <string name="command">Команда</string>
     <string name="tag">Тег</string>

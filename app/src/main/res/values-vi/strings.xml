@@ -29,7 +29,6 @@
     <string name="auto_freeze_notification_title">Dịch vụ tự động đóng băng đang chạy</string>
     <string name="filter_frozen_apps">Đóng băng</string>
     <string name="msg_selected">Đã chọn: %s</string>
-    <string name="action_telegram">Nhóm Telegram</string>
     <string name="tap_to_select">Nhấn để chọn nhiều</string>
     <string name="filter_user_apps">Người dùng</string>
     <string name="nothing_here">Hỏng có gì ở đây cả</string>
@@ -60,10 +59,7 @@
     <string name="sort_by">Sắp xếp theo</string>
     <string name="mode_su_hide">Superuser - Ẩn</string>
     <string name="action_details">Thông tin ứng dụng</string>
-    <string name="title_donate">Cam ơn bạn nha!</string>
     <string name="compact_icon">Biểu tượng nhỏ gọn</string>
-    <string name="donate_bilibili">Ủng hộ qua Bilibili</string>
-    <string name="donate_bilibili_cancel">Hủy</string>
     <string name="action_uninstall">Gỡ cài đặt</string>
     <string name="mode_dhizuku_hide">Dhizuku - Ẩn</string>
     <string name="action_extract_apk">Giải nén APK</string>
@@ -78,7 +74,6 @@
     <string name="mode_shizuku_hide">Shizuku - Ẩn</string>
     <string name="action_launch">Mở ứng dụng</string>
     <string name="action_tag_add">Thêm nhãn</string>
-    <string name="donate_alipay">Ủng hộ bằng Alipay</string>
     <string name="action_undo">Hoàn tác</string>
     <string name="filter_system_apps">Hệ thống</string>
     <string name="sort_install">Thời gian cài đặt</string>
@@ -94,16 +89,12 @@
     <string name="msg_biometric">Đăng nhập bằng thông tin sinh trắc học của bạn</string>
     <string name="permission_denied">Quyền bị từ chối</string>
     <string name="action_help">Trợ giúp</string>
-    <string name="action_qq">Nhóm QQ</string>
     <string name="action_search">Tìm kiếm</string>
     <string name="app_slogan">Đóng băng!</string>
     <string name="auto_freeze">Tự động đóng băng</string>
     <string name="title_home">Trang chủ</string>
     <string name="action_licenses">Giấy phép</string>
-    <string name="action_translate">Dịch thuật</string>
     <string name="mode_shizuku_disable">Shizuku - Tắt</string>
-    <string name="donate_bilibili_msg">Theo dõi mình trên Bilibili nhé.</string>
-    <string name="action_donate">Ủng hộ</string>
     <string name="label_time">Thời gian cài đặt</string>
     <string name="action_github">Github</string>
     <string name="activity_not_found">Không tìm thấy Activity Launch</string>
@@ -121,13 +112,10 @@
     <string name="action_freeze_all">Đóng băng tất cả</string>
     <string name="skip_notifying_app">Bỏ qua ứng dụng thông báo</string>
     <string name="filter_unfrozen_apps">Rã băng</string>
-    <string name="donate_wechat_scan">Quét</string>
     <string name="action_remove_whitelist">Xóa khỏi danh sách trắng</string>
     <string name="skip_foreground_app">Bỏ qua cho ứng dụng đang mở</string>
     <string name="mode_shizuku_stop">Shizuku - Buộc dừng</string>
     <string name="mode_shizuku_suspend">Shizuku - Tạm ngừng</string>
-    <string name="donate_wechat">Ủng hộ bằng WeChat Pay</string>
-    <string name="donate_paypal">Ủng hộ qua PayPal</string>
     <string name="mode_island_hide">Island/Insular - Ẩn</string>
     <string name="mode_island_suspend">Island/Insular - Tạm ngừng</string>
     <string name="shizuku_hide_adb">Shizuku hiện đang chạy bằng adb. Để ẩn ứng dụng, bạn hãy khởi động lại Shizuku với quyền root nhé.</string>
@@ -135,7 +123,6 @@
     <string name="freeze_system_app">Đóng băng ứng dụng hệ thống có thể khiến cho máy của bạn bị treo logo. Hãy chắc là bạn biết bạn đang làm cái gì và đừng quên sao lưu dữ liệu của bạn hoặc sử dụng custom recovery có tính năng quản lý tập tin.</string>
     <string name="action_continue">Tiếp tục</string>
     <string name="mode_su_stop">Root - Buộc Dừng</string>
-    <string name="donate_liberapay">Ủng hộ qua Liberapay</string>
     <string name="mode_dhizuku_suspend">Dhizuku - Tạm ngưng</string>
     <string name="mode_privapp_stop">Ứng dụng hệ thống - Buộc dừng</string>
     <string name="mode_privapp_disable">Ứng dụng hệ thống - Tắt</string>

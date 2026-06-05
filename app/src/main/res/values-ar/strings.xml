@@ -24,7 +24,6 @@
     <string name="shizuku_missing">Shizuku مفقود :(</string>
     <string name="msg_exported">تم تصدير: %s</string>
     <string name="msg_text_copied">منسوخ: %s</string>
-    <string name="donate_liberapay">Liberapay</string>
     <string name="skip_foreground_app">تخطي التطبيق الأمامي</string>
     <string name="icon_pack">حزمة الأيقونات</string>
     <string name="mode_owner_hide">مالك الجهاز - إخفاء</string>
@@ -34,7 +33,6 @@
     <string name="filter_frozen_apps">مجمد</string>
     <string name="msg_selected">محدد: %s</string>
     <string name="action_terminal">الوحدة الطرفية</string>
-    <string name="action_telegram">مجموعة Telegram</string>
     <string name="tap_to_select">انقر للتحديد المتعدد</string>
     <string name="filter_user_apps">المستخدم</string>
     <string name="nothing_here">لا شيء هنا</string>
@@ -62,7 +60,6 @@
     <string name="mode_su_disable">روت - تعطيل</string>
     <string name="title_shortcuts">الاختصارات</string>
     <string name="title_about">لمحة</string>
-    <string name="donate_bilibili_space">مساحة Bilibili</string>
     <string name="tile_action">عمل الزر</string>
     <string name="action_export_all">تصدير الكل</string>
     <string name="grayscale_icon">أيقونة التدرج الرمادي</string>
@@ -71,10 +68,7 @@
     <string name="sort_by">ترتيب حسب</string>
     <string name="mode_su_hide">روت - إخفاء</string>
     <string name="action_details">معلومات التطبيق</string>
-    <string name="title_donate">شكرا لك!</string>
     <string name="compact_icon">أيقونة مضغوطة</string>
-    <string name="donate_bilibili">Bilibili</string>
-    <string name="donate_bilibili_cancel">إلغاء</string>
     <string name="action_uninstall">إلغاء التثبيت</string>
     <string name="mode_dhizuku_hide">Dhizuku - إخفاء</string>
     <string name="action_extract_apk">استخراج APK</string>
@@ -82,7 +76,6 @@
     <string name="action_select_all">تحديد الكل</string>
     <string name="action_unfreeze_remove_home">إلغاء التجميد وإزالة من الصفحة الرئيسية</string>
     <string name="skip_while_charging">تخطي أثناء الشحن</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="label_default">افتراضي</string>
     <string name="filter_by">فلتر</string>
     <string name="operation_failed">فشلت العملية: %s</string>
@@ -90,7 +83,6 @@
     <string name="mode_shizuku_hide">Shizuku - إخفاء</string>
     <string name="action_launch">إطلاق</string>
     <string name="action_tag_add">إضافة علامة</string>
-    <string name="donate_alipay">Alipay</string>
     <string name="action_undo">تراجع</string>
     <string name="filter_system_apps">النظام</string>
     <string name="sort_install">أول تثبيت</string>
@@ -105,25 +97,19 @@
         <item quantity="many">%d دقيقةً</item>
         <item quantity="other">%d دقيقة</item>
     </plurals>
-    <string name="action_fdroid">F-Droid</string>
     <string name="action_lock">قفل</string>
     <string name="msg_guide">قبل تجميد التطبيقات، يرجى تحديد وضع العمل في الإعدادات.</string>
     <string name="sort_update">آخر تحديث</string>
     <string name="action_unfreeze">إلغاء التجميد</string>
-    <string name="donate_wechat">WeChat Pay</string>
     <string name="msg_biometric">تسجيل الدخول باستخدام بيانات الاعتماد البيومترية الخاصة بك</string>
     <string name="permission_denied">تم رفض الإذن</string>
     <string name="action_help">مساعدة</string>
-    <string name="action_qq">مجموعة QQ</string>
     <string name="action_search">بحث</string>
     <string name="app_slogan">تجميد!</string>
     <string name="auto_freeze">تجميد تلقائي</string>
     <string name="title_home">الرئيسية</string>
     <string name="action_licenses">التراخيص</string>
-    <string name="action_translate">ترجمة</string>
     <string name="mode_shizuku_disable">Shizuku - تعطيل</string>
-    <string name="donate_bilibili_msg">تابعني على Bilibili.</string>
-    <string name="action_donate">تبرّع</string>
     <string name="label_time">وقت التثبيت</string>
     <string name="action_github">GitHub</string>
     <string name="activity_not_found">لم يتم العثور على نشاط التشغيل</string>
@@ -140,7 +126,6 @@
     <string name="action_freeze_all">تجميد الكل</string>
     <string name="skip_notifying_app">تخطي تطبيق الإخطار</string>
     <string name="filter_unfrozen_apps">غير مجمد</string>
-    <string name="donate_wechat_scan">مسح ضوئي</string>
     <string name="action_remove_whitelist">إزالة من القائمة البيضاء</string>
     <string name="action_skip">تخطي</string>
     <string name="mode_island_hide">Island/Insular - إخفاء</string>

@@ -12,9 +12,6 @@
     <string name="label_default">طے شدہ</string>
     <string name="label_version">ورژن</string>
     <string name="label_time">انسٹال کرنے کا وقت</string>
-    <string name="action_telegram">ٹیلیگرام گروپ</string>
-    <string name="action_qq">کیو کیو گروپ</string>
-    <string name="action_donate">عطیہ کریں</string>
     <string name="action_freeze">منجمد</string>
     <string name="action_unfreeze">انجماد</string>
     <string name="action_deferred_task">موخر کام</string>
@@ -49,13 +46,6 @@
     <string name="filter_system_apps">سسٹم</string>
     <string name="filter_frozen_apps">منجمد</string>
     <string name="filter_unfrozen_apps">غیر منجمد</string>
-    <string name="donate_wechat">WeChat پے</string>
-    <string name="donate_wechat_scan">اسکین کریں</string>
-    <string name="donate_bilibili">bilibili</string>
-    <string name="donate_bilibili_msg">bilibili پر مجھے فالو کریں۔</string>
-    <string name="donate_bilibili_space">میری جگہ</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="permission_denied">اجازت نہیں دی گئی</string>
     <string name="activity_not_found">لانچ کی سرگرمی نہیں ملی</string>
     <plurals name="deferred_task_entry">
@@ -99,7 +89,6 @@
     <string name="action_freeze_all">سب کو منجمد کریں</string>
     <string name="action_unfreeze_all">سب کو انجماد کریں</string>
     <string name="action_freeze_non_whitelisted">غیر سفید فام کو منجمد کریں</string>
-    <string name="action_translate">ترجمہ کریں</string>
     <string name="action_unfreeze_current">کرنٹ کو غیر منجمد کریں</string>
     <string name="action_lock_freeze">لاک اینڈ فریز</string>
     <string name="action_add_pin_shortcut">ہوم اسکرین میں شامل کریں</string>
@@ -111,10 +100,7 @@
     <string name="sort_by">ترتیب دیں</string>
     <string name="sort_install">پہلے انسٹال کریں</string>
     <string name="sort_update">آخری اپ ڈیٹ</string>
-    <string name="donate_alipay">علیپے</string>
     <string name="sort_name">نام</string>
-    <string name="title_donate">شکریہ!</string>
-    <string name="donate_bilibili_cancel">\@android:string/کینسل</string>
     <string name="msg_unfreeze">غیر منجمد: %s</string>
     <string name="app_not_installed">ایپ انسٹال نہیں ہے</string>
     <string name="operation_failed">آپریشن ناکام ہو گیا: %s</string>

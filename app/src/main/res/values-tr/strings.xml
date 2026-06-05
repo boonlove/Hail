@@ -7,7 +7,6 @@
     <string name="label_default">Varsayılan</string>
     <string name="label_version">Sürüm</string>
     <string name="label_time">Kurulum süresi</string>
-    <string name="action_donate">Bağış</string>
     <string name="action_github">GitHub</string>
     <string name="action_licenses">Lisanslar</string>
     <string name="action_freeze_all">Tümünü dondur</string>
@@ -40,7 +39,6 @@
     <string name="mode_su_suspend">Root - Askıya al</string>
     <string name="mode_shizuku_disable">Shizuku - Devre dışı bırak</string>
     <string name="mode_default">Yok</string>
-    <string name="action_translate">Çeviri</string>
     <string name="mode_shizuku_hide">Shizuku - Gizle</string>
     <string name="mode_shizuku_suspend">Shizuku - Askıya al</string>
     <string name="title_set_owner">Cihaz yöneticisi ayarla</string>
@@ -55,15 +53,6 @@
     <string name="sort_name">İsim</string>
     <string name="sort_install">İlk yüklenme</string>
     <string name="sort_update">Son güncellenme</string>
-    <string name="title_donate">Teşekkürler!</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_wechat_scan">Tara</string>
-    <string name="donate_bilibili">bilibili</string>
-    <string name="donate_bilibili_msg">Beni bilibili\'de takip et.</string>
-    <string name="donate_bilibili_space">Benim sayfam</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="permission_denied">İzin reddedildi</string>
     <string name="app_not_installed">Uygulama yüklü değil</string>
     <string name="operation_failed">İşlem başarısız oldu: %s</string>
@@ -117,10 +106,8 @@
     <string name="icon_pack">Simge paketi</string>
     <string name="action_select_all">Tümünü seç</string>
     <string name="app_name">Hail</string>
-    <string name="action_telegram">Telegram Grubu</string>
     <string name="title_apps">Uygulamalar</string>
     <string name="action_freeze">Dondur</string>
-    <string name="action_qq">QQ Grubu</string>
     <string name="action_details">Uygulama bilgisi</string>
     <string name="mode_owner_hide">Cihaz Yöneticisi - Gizle</string>
     <string name="msg_remove_owner">Cihaz Yöneticisi kaldırılacak, kaldırdıktan sonra yeniden ayarlamak zor olabilir.
@@ -128,7 +115,6 @@
     <string name="activity_not_found">Başlatma etkinliği bulunamadı</string>
     <string name="shizuku_missing">Shizuku kayıp :(</string>
     <string name="mode_owner_suspend">Cihaz Yöneticisi - Askıya Al</string>
-    <string name="donate_bilibili_cancel">\@android:string/cancel</string>
     <string name="action_terminal">Terminal</string>
     <string name="mode_dhizuku_suspend">Dhizuku - Askıya al</string>
     <string name="mode_dhizuku_hide">Dhizuku - Gizle</string>
@@ -136,7 +122,6 @@
     <string name="mode_island_hide">Island/Insular - Gizle</string>
     <string name="mode_island_suspend">Island/Insular - Askıya al</string>
     <string name="mode_su_hide">Root - Gizle</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="shizuku_hide_adb">Shizuku adb olarak çalışıyor. Uygulamaları gizlemek için lütfen Shizuku\'yu root ile yeniden başlatın.</string>
     <string name="command">Komut</string>
     <string name="tag">Etiket</string>

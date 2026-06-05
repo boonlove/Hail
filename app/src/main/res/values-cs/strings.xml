@@ -5,10 +5,7 @@
     <string name="title_about">O nás</string>
     <string name="label_default">Výchozí</string>
     <string name="label_version">Verze</string>
-    <string name="action_qq">Skupina QQ</string>
-    <string name="action_donate">Přispět</string>
     <string name="action_github">GitHub</string>
-    <string name="action_translate">Přeložit</string>
     <string name="action_licenses">Licence</string>
     <string name="action_freeze_all">Zmrazit všechny</string>
     <string name="action_unfreeze_all">Odmrazit všechny</string>
@@ -36,7 +33,6 @@
     <string name="mode_shizuku_disable">Shizuku - Deaktivovat</string>
     <string name="app_name">Hail</string>
     <string name="title_home">Domů</string>
-    <string name="action_telegram">Skupina telegram</string>
     <string name="action_tag_set">Nastavit štítek</string>
     <string name="action_unfreeze_remove_home">Odmrazit a Odstranit z Domů</string>
     <string name="action_deselect">Zrušit výběr</string>

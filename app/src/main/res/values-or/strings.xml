@@ -3,10 +3,6 @@
     <string name="title_home">ଗୃହ</string>
     <string name="title_settings">ସେଟିଂ</string>
     <string name="label_default">ଡିଫଲ୍ଟ</string>
-    <string name="action_telegram">Telegram ଗୋଷ୍ଠୀ</string>
-    <string name="action_qq">QQ ଗୋଷ୍ଠୀ</string>
-    <string name="action_donate">ଦାନ କରନ୍ତୁ</string>
-    <string name="action_translate">ଅନୁଵାଦ କରନ୍ତୁ</string>
     <string name="action_help">ସହାୟତା</string>
     <string name="action_search">ସନ୍ଧାନ</string>
     <string name="action_details">ଆପ୍ ସୂଚନା</string>

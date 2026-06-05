@@ -9,11 +9,7 @@
     <string name="label_default">Default</string>
     <string name="label_version">Version</string>
     <string name="label_time">Install time</string>
-    <string name="action_telegram">Telegram Group</string>
-    <string name="action_qq">QQ Group</string>
-    <string name="action_donate">Donate</string>
     <string name="action_github">GitHub</string>
-    <string name="action_translate">Translate</string>
     <string name="action_licenses">Licenses</string>
     <string name="action_freeze_all">Freeze all</string>
     <string name="action_unfreeze_all">Unfreeze all</string>
@@ -70,16 +66,6 @@
     <string name="sort_name">Name</string>
     <string name="sort_install">First install</string>
     <string name="sort_update">Last update</string>
-    <string name="title_donate">Thank you!</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_wechat_scan">Scan</string>
-    <string name="donate_bilibili">Bilibili</string>
-    <string name="donate_bilibili_msg">Follow me on Bilibili.</string>
-    <string name="donate_bilibili_space">Bilibili space</string>
-    <string name="donate_bilibili_cancel">Cancel</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="permission_denied">Permission denied</string>
     <string name="app_not_installed">App not installed</string>
     <string name="activity_not_found">Launch activity not found</string>
@@ -136,7 +122,6 @@
     <string name="mode_dhizuku_hide">Dhizuku - Hide</string>
     <string name="mode_dhizuku_suspend">Dhizuku - Suspend</string>
     <string name="mode_su_hide">Root - Hide</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="action_skip">Skip</string>
     <string name="xposed_description">Automatically unfreeze suspended app for scoped apps</string>
     <string name="mode_island_hide">Island/Insular - Hide</string>

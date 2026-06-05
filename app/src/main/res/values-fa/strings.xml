@@ -9,11 +9,7 @@
     <string name="label_default">پیش‌گزیده</string>
     <string name="label_version">نگارش</string>
     <string name="label_time">تاریخ نصب</string>
-    <string name="action_telegram">گروه تلگرامی</string>
-    <string name="action_qq">گروه کیوکیو</string>
-    <string name="action_donate">حمایت</string>
     <string name="action_github">گیت‌هاب</string>
-    <string name="action_translate">ترجمه</string>
     <string name="action_licenses">پروانه‌ها</string>
     <string name="action_freeze_all">انجماد همه</string>
     <string name="action_unfreeze_all">یخ‌زدایی همه</string>
@@ -58,14 +54,6 @@
     <string name="sort_name">نام</string>
     <string name="sort_install">نصب نخست</string>
     <string name="sort_update">آخرین بروزرسانی</string>
-    <string name="title_donate">سپاس از شما!</string>
-    <string name="donate_wechat">پرداخت وی‌چت</string>
-    <string name="donate_wechat_scan">اسکن</string>
-    <string name="donate_bilibili">بیلی‌بیلی</string>
-    <string name="donate_bilibili_msg">مرا در بیلی‌بیلی دنبال کنید.</string>
-    <string name="donate_bilibili_space">فضای بیلی‌بیلی</string>
-    <string name="donate_liberapay">لیبراپی</string>
-    <string name="donate_paypal">پی‌پل</string>
     <string name="app_not_installed">برنامه نصب نشد</string>
     <string name="shizuku_missing">شیزوکو نصب نیست :(</string>
     <string name="operation_failed">عملیات شکست خورد: %s</string>
@@ -94,8 +82,6 @@
     <string name="msg_imported">درون ریخته: %s</string>
     <string name="msg_set_owner">دستور زیر را از adb اجرا کنید:
 \n%s</string>
-    <string name="donate_alipay">علی‌پی</string>
-    <string name="donate_bilibili_cancel">دست کشیدن</string>
     <string name="synthesize_adaptive_icons">آمیختن آیکون‌های سازگار</string>
     <string name="skip_notifying_app">رد کردن برنامه‌ی دارای نوتیفیکیشن</string>
     <string name="action_terminal">ترمینال</string>
@@ -124,7 +110,6 @@
     <string name="icon_pack">بسته آیکون</string>
     <string name="action_select_all">انتخاب همه</string>
     <string name="mode_su_hide">روت - پنهان کردن</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="action_skip">رد کردن</string>
     <string name="msg_remove_owner">اگر Hail به عنوان مالک دستگاه حذف شود، ممکن است پس از حذف Hail در سازماندهی مجدد برنامه‌ها مشکلاتی وجود داشته باشد. \n برنامه‌های یخ‌زده پس از حذف به همان شکل می‌مانند، لطفاً مطمئن شوید که برنامه‌های مهم را از حالت یخ‌زدگی بیرون آورده‌اید.</string>
     <string name="permission_denied">اجازه رد شد</string>

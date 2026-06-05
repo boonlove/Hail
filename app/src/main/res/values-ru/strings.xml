@@ -9,11 +9,7 @@
     <string name="label_default">По умолчанию</string>
     <string name="label_version">Версия</string>
     <string name="label_time">Время установки</string>
-    <string name="action_telegram">Группа в Telegram</string>
-    <string name="action_qq">Группа в QQ</string>
-    <string name="action_donate">Задонатить</string>
     <string name="action_github">GitHub</string>
-    <string name="action_translate">Перевод</string>
     <string name="action_licenses">Лицензии</string>
     <string name="action_freeze_all">Заморозить все</string>
     <string name="action_unfreeze_all">Разморозить все</string>
@@ -60,16 +56,6 @@
     <string name="sort_name">Название</string>
     <string name="sort_install">Дата установки</string>
     <string name="sort_update">Дата обновления</string>
-    <string name="title_donate">Спасибо!</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_wechat_scan">Сканировать</string>
-    <string name="donate_bilibili">Bilibili</string>
-    <string name="donate_bilibili_msg">Подпишитесь на мой Bilibili.</string>
-    <string name="donate_bilibili_space">Пространство Bilibili</string>
-    <string name="donate_bilibili_cancel">Отменить</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="permission_denied">Разрешение отклонено</string>
     <string name="app_not_installed">Приложение не установлено</string>
     <string name="activity_not_found">Активити для запуска не обнаружено</string>
@@ -139,7 +125,6 @@
     <string name="mode_su_hide">Root - Скрыть</string>
     <string name="mode_island_hide">Island/Insular - Скрыть</string>
     <string name="mode_island_suspend">Island/Insular - Отключить</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="shizuku_hide_adb">Shizuku работает по adb. Чтобы скрыть приложения, пожалуйста, перезапустите Shizuku с рут правами.</string>
     <string name="freeze_system_app">Заморозка или удаление системных приложений может привести к бутлупу. Убедитесь, что вы знаете, что делаете, и заранее сделайте резервную копию своих данных или используйте рекавери, поддерживающее управление файлами.</string>
     <string name="action_continue">Продолжить</string>

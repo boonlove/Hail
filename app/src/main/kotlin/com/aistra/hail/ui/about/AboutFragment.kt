@@ -100,26 +100,8 @@ class AboutFragment : MainFragment() {
             Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_medium)))
             OutlinedCard(modifier = Modifier.padding(horizontal = dimensionResource(R.dimen.padding_medium))) {
                 ClickableItem(
-                    icon = Icons.AutoMirrored.Filled.Send, title = R.string.action_telegram
-                ) { HUI.openLink(HailData.URL_TELEGRAM) }
-                ClickableItem(
-                    icon = Icons.Outlined.Group, title = R.string.action_qq
-                ) { HUI.openLink(HailData.URL_QQ) }
-                ClickableItem(
-                    icon = Icons.Outlined.LocalMall, title = R.string.action_fdroid
-                ) { HUI.openLink(HailData.URL_FDROID) }
-                ClickableItem(
-                    icon = Icons.Outlined.CardGiftcard, title = R.string.action_donate, onClick = ::openDonateDialog
-                )
-            }
-            Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_medium)))
-            OutlinedCard(modifier = Modifier.padding(horizontal = dimensionResource(R.dimen.padding_medium))) {
-                ClickableItem(
                     icon = Icons.Outlined.Code, title = R.string.action_github
                 ) { HUI.openLink(HailData.URL_GITHUB) }
-                ClickableItem(
-                    icon = Icons.Outlined.Translate, title = R.string.action_translate
-                ) { HUI.openLink(HailData.URL_TRANSLATE) }
                 ClickableItem(
                     icon = Icons.Outlined.Description, title = R.string.action_licenses
                 ) { openLicenseDialog = true }
@@ -171,38 +153,6 @@ class AboutFragment : MainFragment() {
             }
         },
         onDismissRequest = onDismiss,
-        confirmButton = { TextButton(onClick = onDismiss) { Text(text = stringResource(android.R.string.ok)) } })
-
-    private fun openDonateDialog() {
-        MaterialAlertDialogBuilder(activity).setTitle(R.string.title_donate)
-            .setSingleChoiceItems(R.array.donate_payment_entries, 0) { dialog, which ->
-                dialog.dismiss()
-                when (which) {
-                    0 -> if (HUI.openLink(HailData.URL_ALIPAY_API).not()) {
-                        HUI.openLink(HailData.URL_ALIPAY)
-                    }
-
-                    1 -> MaterialAlertDialogBuilder(activity).setTitle(R.string.title_donate)
-                        .setView(ShapeableImageView(activity).apply {
-                            val padding = resources.getDimensionPixelOffset(R.dimen.padding_large)
-                            setPadding(0, padding, 0, padding)
-                            setImageResource(R.mipmap.qr_wechat)
-                        }).setPositiveButton(R.string.donate_wechat_scan) { _, _ ->
-                            app.packageManager.getLaunchIntentForPackage("com.tencent.mm")?.let {
-                                it.putExtra("LauncherUI.From.Scaner.Shortcut", true)
-                                startActivity(it)
-                            } ?: HUI.showToast(R.string.app_not_installed)
-                        }.setNegativeButton(android.R.string.cancel, null).show()
-
-                    2 -> MaterialAlertDialogBuilder(activity).setTitle(R.string.title_donate)
-                        .setMessage(R.string.donate_bilibili_msg)
-                        .setPositiveButton(R.string.donate_bilibili_space) { _, _ ->
-                            HUI.openLink(HailData.URL_BILIBILI)
-                        }.setNegativeButton(R.string.donate_bilibili_cancel, null).show()
-
-                    3 -> HUI.openLink(HailData.URL_LIBERAPAY)
-                    4 -> HUI.openLink(HailData.URL_PAYPAL)
-                }
-            }.setNegativeButton(android.R.string.cancel, null).show()
-    }
+        confirmButton = { TextButton(onClick = onDismiss) { Text(text = stringResource(android.R.string.ok)) } }
+    )
 }

@@ -6,7 +6,6 @@
     <string name="app_name">Hail</string>
     <string name="app_slogan">Fagyasszunk!</string>
     <string name="title_home">Kezdőlap</string>
-    <string name="action_telegram">Telegram csoport</string>
     <string name="action_github">GitHub</string>
     <string name="action_licenses">Licencek</string>
     <string name="action_freeze_all">Mind lefagyasztása</string>
@@ -47,12 +46,6 @@
     <string name="sort_by">Rendezés eszerint</string>
     <string name="sort_install">Korábban telepítettek</string>
     <string name="sort_update">Utoljára frissítettek</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_bilibili">Bilibili</string>
-    <string name="donate_bilibili_space">Bilibili tér</string>
-    <string name="donate_bilibili_cancel">Mégse</string>
-    <string name="donate_liberapay">Liberapay</string>
     <string name="activity_not_found">Indítási tevékenység nem található</string>
     <string name="shizuku_missing">Shizuku hiányzik :(</string>
     <string name="operation_failed">A művelet sikertelen: %s</string>
@@ -97,7 +90,6 @@
     <string name="mode_dhizuku_hide">Dhizuku - Elrejtés</string>
     <string name="mode_dhizuku_suspend">Dhizuku - Felfüggesztés</string>
     <string name="mode_su_hide">Root - Elrejtés</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="action_skip">Kihagyás</string>
     <string name="mode_island_hide">Island/Insular - Elrejtés</string>
     <string name="mode_island_suspend">Island/Insular - Felfüggesztés</string>
@@ -113,9 +105,7 @@
     <string name="follow_system">Kövesse a rendszerét</string>
     <string name="theme_light">Világos</string>
     <string name="theme_dark">Sötét</string>
-    <string name="action_donate">Adományozás</string>
     <string name="label_default">Alapértelmezett</string>
-    <string name="action_translate">Fordítás</string>
     <string name="action_unfreeze_remove_home">Fagyasztás és eltávolítás a főképernyőről</string>
     <string name="title_remove_owner">Eszköztulajdonos eltávolítása</string>
     <string name="label_time">Telepítés ideje</string>
@@ -137,19 +127,14 @@
     <string name="auto_freeze_delay">Fagyasztási késleltetés (perc)</string>
     <string name="label_version">Verzió</string>
     <string name="msg_remove_owner">Ha a Hail-t eszköztulajdonosként eltávolítja, előfordulhat, hogy ezt követően nehéz lesz újraszervezni az alkalmazásokat.\nA fagyasztott alkalmazások a Hali eltávolítása után is fagyasztva maradnak, ezért kérjük figyelje arra, hogy a fontos alkalmazások fagyasztását szüntesse meg.</string>
-    <string name="title_donate">Köszönöm!</string>
     <string name="permission_denied">Az engedély megtagadva</string>
     <string name="filter_user_apps">Felhasználó</string>
     <string name="msg_guide">Az alkalmazások fagyasztása előtt kérjük, válassza ki a beállításokban a működési módot.</string>
     <string name="app_not_installed">Az alkalmazás nincs telepítve</string>
-    <string name="donate_wechat_scan">Vizsgálat</string>
     <string name="action_unfreeze_tag">Címke kiolvasztás</string>
-    <string name="donate_bilibili_msg">Kövessen a Bilibil-n.</string>
     <string name="msg_biometric">Bejelentkezés a biometrikus azonosítással</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="compact_icon">Kompakt ikon</string>
     <string name="auto_freeze_notification_title">Automatikus fagyasztási szolgáltatás fut</string>
     <string name="action_terminal">Terminál</string>
     <string name="freeze_system_app">A rendszeralkalmazások fagyasztása vagy eltávolítása az eszközön bootloop-hoz vezethet. Győződjön meg arról, hogy tudja mit csinál, és előzetesen készítsen biztonsági másolatot adatairól, vagy használjon olyan helyreállítást, amely fájlkezelést támogat.</string>
-    <string name="action_qq">QQ csoport</string>
 </resources>

@@ -9,11 +9,7 @@
     <string name="label_default">Standard</string>
     <string name="label_version">Version</string>
     <string name="label_time">Installationszeitpunkt</string>
-    <string name="action_telegram">Telegram Gruppe</string>
-    <string name="action_qq">QQ Gruppe</string>
-    <string name="action_donate">Spenden</string>
     <string name="action_github">GitHub</string>
-    <string name="action_translate">Übersetzen</string>
     <string name="action_licenses">Lizenzen</string>
     <string name="action_freeze_all">Alle einfrieren</string>
     <string name="action_unfreeze_all">Alle auftauen</string>
@@ -65,16 +61,6 @@
     <string name="sort_name">Name</string>
     <string name="sort_install">Installationszeitpunkt</string>
     <string name="sort_update">Letztes Update</string>
-    <string name="title_donate">Vielen Dank!</string>
-    <string name="donate_alipay">Alipay</string>
-    <string name="donate_wechat">WeChat Pay</string>
-    <string name="donate_wechat_scan">Scan</string>
-    <string name="donate_bilibili">bilibili</string>
-    <string name="donate_bilibili_msg">Folge mir auf bilibili.</string>
-    <string name="donate_bilibili_space">Mein Bereich</string>
-    <string name="donate_bilibili_cancel">@android:string/cancel</string>
-    <string name="donate_liberapay">Liberapay</string>
-    <string name="donate_paypal">PayPal</string>
     <string name="permission_denied">Zugriff verweigert</string>
     <string name="app_not_installed">Anwendung ist nicht installiert</string>
     <string name="activity_not_found">Startaktivität nicht gefunden</string>
@@ -137,7 +123,6 @@
     <string name="mode_shizuku_stop">Shizuku - Beenden erzwingen</string>
     <string name="mode_privapp_disable">System-App - Deaktivieren</string>
     <string name="mode_su_hide">Root - Verstecken (Hide)</string>
-    <string name="action_fdroid">F-Droid</string>
     <string name="action_skip">Überspringen</string>
     <string name="shizuku_hide_adb">Shizuku wird mit adb ausgeführt. Um Apps zu verstecken, bitte Shizuku als Root neu starten.</string>
     <string name="mode_island_hide">Island/Insular - Verstecken (Hide)</string>

@@ -14,7 +14,7 @@
             android:title="@string/tap_to_select"
             app:showAsAction="always"
             tools:ignore="AlwaysShowAction"/>
-    <group android:id="@+id/group_freeze_current">
+    <group>
         <item
                 android:id="@+id/action_freeze_current"
                 android:title="@string/action_freeze_current"
@@ -24,7 +24,7 @@
                 android:title="@string/action_unfreeze_current"
                 app:showAsAction="never"/>
     </group>
-    <group android:id="@+id/group_freeze_all">
+    <group>
         <item
                 android:id="@+id/action_freeze_all"
                 android:title="@string/action_freeze_all"
