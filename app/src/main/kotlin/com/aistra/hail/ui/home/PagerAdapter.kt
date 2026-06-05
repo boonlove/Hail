@@ -51,7 +51,7 @@ class PagerAdapter(
             }
             findViewById<TextView>(R.id.app_name).run {
                 text = buildString {
-                    if (!HailData.grayscaleIcon && info.state == AppInfo.State.FROZEN) append("\u2744\uFE0F")
+                    if (info.state == AppInfo.State.FROZEN) append("\u2744\uFE0F")
                     if (info.whitelisted) append("\uD83D\uDD12")
                     append(info.name)
                 }
