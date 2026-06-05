@@ -160,7 +160,9 @@ class PagerFragment : MainFragment(), PagerAdapter.OnItemClickListener, PagerAda
                 .setAction(R.string.action_remove_home) { removeCheckedApp(info.packageName) }.show()
             return
         }
-        launchApp(info.packageName)
+        // launchApp(info.packageName)
+         val frozen = AppManager.isAppFrozen(info.packageName)
+         setListFrozen(!frozen, listOf(info))
     }
 
     override fun onItemLongClick(info: AppInfo): Boolean {
