@@ -2,14 +2,12 @@
 
 # 雹 Hail
 
-[![Android CI status](https://github.com/aistra0528/Hail/workflows/Android%20CI/badge.svg)](https://github.com/aistra0528/Hail/actions)
+[![Android CI status](https://github.com/boonlove/Hail/workflows/Android%20CI/badge.svg)](https://github.com/boonlove/Hail/actions)
 [![翻译状态](https://hosted.weblate.org/widgets/hail/-/svg-badge.svg)](https://hosted.weblate.org/engage/hail/)
-[![Downloads](https://img.shields.io/github/downloads/aistra0528/Hail/total.svg)](https://github.com/aistra0528/Hail/releases)
-[![License](https://img.shields.io/github/license/aistra0528/Hail)](LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/boonlove/Hail/total.svg)](https://github.com/boonlove/Hail/releases)
+[![License](https://img.shields.io/github/license/boonlove/Hail)](LICENSE)
 
-雹是一款用于冻结 Android 应用的自由软件。[GitHub Releases](https://github.com/aistra0528/Hail/releases)
-
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.aistra.hail/)
+雹是一款用于冻结 Android 应用的自由软件。[GitHub Releases](https://github.com/boonlove/Hail/releases)
 
 <img src="fastlane/metadata/android/zh-CN/images/phoneScreenshots/1.png" width="32%" /> <img src="fastlane/metadata/android/zh-CN/images/phoneScreenshots/2.png" width="32%" /> <img src="fastlane/metadata/android/zh-CN/images/phoneScreenshots/3.png" width="32%" />
 
@@ -222,16 +220,16 @@ adb shell am start -a action -e key value
     Hail - Freeze Android apps
     Copyright (C) 2021-2026 Aistra
     Copyright (C) 2022-2026 Hail contributors
-
+    
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-
+    
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
+    
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
