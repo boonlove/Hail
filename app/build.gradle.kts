@@ -1,58 +1,80 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
 }
 
-android {
-    val signingProps = file("../signing.properties")
-    val commitHash = providers.exec {
-        workingDir = rootDir
-        commandLine = "git rev-parse --short HEAD".split(" ")
-    }.standardOutput.asText.get().trim()
-    val commitSubject = providers.exec {
-        workingDir = rootDir
-        commandLine = "git log -1 --pretty=%s".split(" ")
-    }.standardOutput.asText.get().trim()
+val androidMinSdkVersion: Int by rootProject.extra
+val androidTargetSdkVersion: Int by rootProject.extra
+val androidCompileSdkVersion: Int by rootProject.extra
+val androidApplicationId: String by rootProject.extra
+val androidVersionName: String by rootProject.extra
+val androidVersionCode: Int by rootProject.extra
 
+fun getSigningConfig(key: String): String? {
+    val properties = Properties()
+    val keystorePropertiesFile = rootProject.file("keystore.properties")
+    if (keystorePropertiesFile.exists()) {
+        try {
+            properties.load(keystorePropertiesFile.inputStream())
+            return properties.getProperty(key)
+        } catch (e: Exception) {
+            println("Warning: 无法加载 keystore.properties 文件: ${e.message}")
+        }
+    }
+    return null
+}
+
+android {
     namespace = "com.aistra.hail"
-    compileSdk = 36
+    compileSdk = androidCompileSdkVersion
 
     defaultConfig {
-        applicationId = "com.aistra.hail"
-        minSdk = 23
-        targetSdk = 36
-        versionCode = 34
-        versionName = "1.10.0"
+        applicationId = androidApplicationId
+        minSdk = androidMinSdkVersion
+        targetSdk = androidTargetSdkVersion
+        versionCode = androidVersionCode
+        versionName = androidVersionName
+
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
+    }
+
+    signingConfigs {
+        val storeFilePath = getSigningConfig("storeFile").toString()
+        val storePassword = getSigningConfig("storePassword")
+        val keyAlias = getSigningConfig("keyAlias")
+        val keyPassword = getSigningConfig("keyPassword")
+        val hasSigning = rootProject.file(storeFilePath).exists() && storePassword != null && keyAlias != null && keyPassword != null
+        if (hasSigning) {
+            create("release") {
+                this.storeFile = rootProject.file(storeFilePath)
+                this.storePassword = storePassword
+                this.keyAlias = keyAlias
+                this.keyPassword = keyPassword
+                enableV1Signing = true
+                enableV2Signing = true
+                enableV3Signing = true
+                enableV4Signing = false
+            }
+        }
     }
 
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            versionNameSuffix = "-g$commitHash"
+            signingConfig = signingConfigs.findByName("release")
         }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
-            if (!commitSubject.startsWith("[release]")) versionNameSuffix = "-g$commitHash"
-            signingConfig = if (signingProps.exists()) {
-                val props = `java.util`.Properties().apply { load(signingProps.reader()) }
-                signingConfigs.create("release") {
-                    storeFile = file(props.getProperty("storeFile"))
-                    storePassword = props.getProperty("storePassword")
-                    keyAlias = props.getProperty("keyAlias")
-                    keyPassword = props.getProperty("keyPassword")
-                }
-            } else signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.findByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
-        }
-    }
-    applicationVariants.configureEach {
-        outputs.configureEach {
-            (this as? com.android.build.gradle.internal.api.ApkVariantOutputImpl)?.outputFileName =
-                "Hail-v$versionName.apk"
         }
     }
     java {
@@ -77,6 +99,12 @@ android {
         includeInApk = false
         includeInBundle = false
     }
+}
+
+base {
+    archivesName.set(
+        "Hail_v${androidVersionName}_${androidVersionCode}"
+    )
 }
 
 dependencies {

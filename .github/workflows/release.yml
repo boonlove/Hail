@@ -1,0 +1,105 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: ./.github/workflows/android.yml
+    secrets: inherit
+
+  release:
+    name: Release
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: 生成更新日志
+        id: changelog
+        run: |
+          # 获取上一个 tag 的名字
+          PREV_TAG=$(git tag --sort=-creatordate | sed -n '2p' 2>/dev/null || echo "")
+          CURR_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          if [ -z "$CURR_TAG" ]; then
+            CURR_TAG="HEAD"
+          fi
+
+          # 获取提交记录
+          if [ -z "$PREV_TAG" ]; then
+            echo "没有找到上一个 tag，获取到 ${CURR_TAG} 的提交记录。"
+            COMMITS=$(git log $CURR_TAG --no-merges --pretty=format:"%s")
+          else
+            echo "获取到 ${PREV_TAG}..${CURR_TAG} 的提交记录。"
+            COMMITS=$(git log $PREV_TAG..$CURR_TAG --no-merges --pretty=format:"%s")
+          fi
+
+          {
+            # 提取功能更新 (feat)
+            FEATS=$(echo "$COMMITS" | grep "^feat" | sed -E 's/^feat:?[[:space:]]*/- /' || true)
+            if [ -n "$FEATS" ]; then
+              echo "## 功能"
+              echo "$FEATS"
+              echo ""
+            fi
+
+            # 提取性能更新 (perf)
+            PERF=$(echo "$COMMITS" | grep "^perf" | sed -E 's/^perf:?[[:space:]]*/- /' || true)
+            if [ -n "$PERF" ]; then
+              echo "## 性能"
+              echo "$PERF"
+              echo ""
+            fi
+
+            # 提取优化与改进 (refactor)
+            REFACTOR=$(echo "$COMMITS" | grep "^refactor" | sed -E 's/^refactor:?[[:space:]]*/- /' || true)
+            if [ -n "$REFACTOR" ]; then
+              echo "## 优化与改进"
+              echo "$REFACTOR"
+              echo ""
+            fi
+
+            # 提取修复 (fix)
+            FIXES=$(echo "$COMMITS" | grep -E '^((fixup!) ?(refactor|feat|fix|perf)|(fix))' | sed -E 's/^((fixup!) ?(refactor|feat|fix|perf)|(fix)):?[[:space:]]*/- /' || true)
+            if [ -n "$FIXES" ]; then
+              echo "## 修复"
+              echo "$FIXES"
+              echo ""
+            fi
+
+            # 如果没有任何匹配的内容，至少留一行记录
+            if [ -z "$FEATS" ] && [ -z "$FIXES" ] && [ -z "$REFACTOR" ] && [ -z "$PERF" ]; then
+              echo "常规更新与优化"
+            fi
+          } > changelog.txt
+
+          cat changelog.txt
+
+      - name: 下载 APK
+        uses: actions/download-artifact@v8
+        with:
+          pattern: "*.apk"
+          path: app/release
+          merge-multiple: true
+          skip-decompress: true
+
+      - name: 创建 GitHub Release
+        if: success()
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body_path: changelog.txt
+          files: app/release/*.apk
+          generate_release_notes: false
+          prerelease: false

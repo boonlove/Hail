@@ -3,6 +3,7 @@
 /build/
 /local.properties
 /signing.properties
+/keystore.properties
 *.iml
 *.jks
 *.keystore
