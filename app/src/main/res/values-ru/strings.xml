@@ -142,4 +142,5 @@
     <string name="follow_system">Как в системе</string>
     <string name="theme_light">Светлая</string>
     <string name="theme_dark">Тёмная</string>
+    <string name="xposed_description">Автоматически размораживать приостановленные приложения для приложений с ограниченной областью действия</string>
 </resources>
