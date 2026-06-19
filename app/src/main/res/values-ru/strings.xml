@@ -81,7 +81,7 @@
         <item quantity="other">%2$s через %1$d минут: %3$s</item>
     </plurals>
     <string name="action_clear_dynamic_shortcuts">Очистить все динамические ярлыки</string>
-    <string name="tile_action">Быстрая настройка действий плитки</string>
+    <string name="tile_action">Действие плитки быстрых настроек</string>
     <string name="auto_freeze">Автозаморозка</string>
     <string name="auto_freeze_notification_title">Служба автозаморозки работает</string>
     <string name="auto_freeze_after_lock">После блокировки экрана</string>
@@ -142,5 +142,5 @@
     <string name="follow_system">Как в системе</string>
     <string name="theme_light">Светлая</string>
     <string name="theme_dark">Тёмная</string>
-    <string name="xposed_description">Автоматически размораживать приостановленные приложения для приложений с ограниченной областью действия</string>
+    <string name="xposed_description">Авторазморзка приостановленных приложений изолированного профиля</string>
 </resources>
